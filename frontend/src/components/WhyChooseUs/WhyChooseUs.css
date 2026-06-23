@@ -1,0 +1,46 @@
+.why-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.why-header h2 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.why-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.why-desc {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
